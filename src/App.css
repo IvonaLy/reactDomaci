@@ -81,3 +81,71 @@ a{
       height: 200px;
   }
 }
+
+
+/*za dogadjaje*/
+* {
+  box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+ 
+ 
+.card {
+  margin: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: 300px;
+}
+.card-header img {
+  width: 100%;
+ 
+  object-fit: cover;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  min-height: 250px;
+  
+}
+.naslovKartice{
+  font-size:25px;
+}
+.opis{
+  font-size:25px;
+}
+.cena{
+  font-size:250px;
+  text-decoration:  none;
+  margin:0;
+}
+ 
+.tag {
+ 
+  border-radius: 50px;
+  font-size: 12px;
+  margin: 0;
+  color: #fff;
+  padding: 2px 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.tag-teal {
+  background-color: #eedb6d;
+}
+ 
+
+.card-body p {
+  font-size: 13px;
+  margin: 0 0 40px;
+}
+.card-img-top{
+  height:300px;
+  width: auto;
+} 

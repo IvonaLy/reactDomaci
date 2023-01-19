@@ -4,6 +4,7 @@ import Navbar from './Navbar';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Footer from './Footer';
 import Kontakt from './Kontakt';
+import { useState } from 'react';
 
 function App() {
   const [products] = useState([
