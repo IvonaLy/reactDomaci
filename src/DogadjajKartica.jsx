@@ -2,7 +2,7 @@
  import { BiTime } from 'react-icons/bi';
  import { ImPriceTags } from 'react-icons/im';
 
- function DogadjajKartica({dogadjaj}) {
+ function DogadjajKartica({dogadjaj,dodaj}) {
      return (
    
          <div className="card">
@@ -21,6 +21,7 @@
              
              <p className='cena'>  {dogadjaj.mesto}  </p>   
             
+             <button className="sortbtn btn" onClick={()=>dodaj(dogadjaj.id)}>Dodaj u omiljene</button>
              
              
          </div> 

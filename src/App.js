@@ -6,6 +6,7 @@ import Footer from './Footer';
 import Kontakt from './Kontakt';
 import { useState } from 'react';
 import Dogadjaji from './Dogadjaji';
+import Omiljeni from './Omiljeni';
 
 function App() {
   const [dogadjaji] = useState([
@@ -16,7 +17,8 @@ function App() {
       opis:  "Posetite tribinu i konferenciju za štampu pod nazivom Okupacija Srbije ",
       vreme: "13:00",
       mesto: "Pres centar UNS",
-      cena_ulaznice: 1000
+      cena_ulaznice: 1000,
+      omiljen:0
     },
     {
       id: 2,
@@ -25,7 +27,8 @@ function App() {
       opis:  "Tradicionalna verska manifestacija obeležavanje praznika Krstovdan i Bogojavljenje ",
       vreme: "12:00",
       mesto: "Zemunski kej",
-      cena_ulaznice: 0
+      cena_ulaznice: 0,
+      omiljen:0
 
     },
     {
@@ -35,7 +38,9 @@ function App() {
       opis:  "Izložba Veličanstvena decenija. Ustav u praksi. Fotografije Benita Romana, 1975 - 1985.",
       vreme: "13:00",
       mesto: "Institut Servantes",
-      cena_ulaznice:300
+      cena_ulaznice:300,
+      omiljen:0
+
 
     },
     {
@@ -45,16 +50,38 @@ function App() {
       opis:  "Bogat programmom za sve generacije ",
       vreme: "10:00",
       mesto: "Park Tasmajdan",
-      cena_ulaznice:400
+      cena_ulaznice:400,
+      omiljen:0
+
 
     },
   ])
+  const [omiljeni, setOmiljeni] = useState([]);
+
+  function osvezi() {
+    let fav = dogadjaji.filter((p) => p.omiljen > 0);
+    setOmiljeni (fav);
+    console.log(omiljeni)
+  }
+  function dodaj( id) {
+    console.log(id)
+   
+    dogadjaji.forEach((d) => {
+      if (d.id === id) {
+        d.omiljen=1;
+        console.log(d)
+      }
+    });
+    osvezi();
+
+  }
   return (
     <div className="App">
        <BrowserRouter  >
       <Navbar ></Navbar>
       <Routes>
-        <Route path="/" element={<Dogadjaji dogadjaji={dogadjaji}></Dogadjaji>}></Route>
+        <Route path="/" element={<Dogadjaji dogadjaji={dogadjaji} dodaj={dodaj}></Dogadjaji>}></Route>
+        <Route path="/omiljeni" element={<Omiljeni dogadjaji={omiljeni} ></Omiljeni>}></Route>
          
         <Route path="/kontakt" element={<Kontakt></Kontakt>}></Route>
         
