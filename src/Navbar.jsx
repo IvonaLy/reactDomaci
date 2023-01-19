@@ -7,7 +7,7 @@ function Navbar() {
      
         <Link to="/" className="navbar-items">Dogadjaji  </Link>
           
-        <Link to="/korpa" className="navbar-items">
+        <Link to="/moji-dogadjaji" className="navbar-items">
           <p>Moji dogadjaji</p>
             
         </Link>
