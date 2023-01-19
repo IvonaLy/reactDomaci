@@ -98,7 +98,10 @@ body{
   border-radius: 10px;
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
   overflow: hidden;
-  width: 300px;
+  width: 250px;
+  height: 600px;
+ 
+
 }
 .card-header img {
   width: 100%;
@@ -149,3 +152,15 @@ body{
   height:300px;
   width: auto;
 } 
+
+.all-events{
+   
+     
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin:9%;
+  margin-top: 50px;
+
+  
+}

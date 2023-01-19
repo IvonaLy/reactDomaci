@@ -5,9 +5,10 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Footer from './Footer';
 import Kontakt from './Kontakt';
 import { useState } from 'react';
+import Dogadjaji from './Dogadjaji';
 
 function App() {
-  const [products] = useState([
+  const [dogadjaji] = useState([
     {
       id: 1,
       image: "https://belgrade-beat.rs/photos/activities/3423/t-1673860579.jpg",
@@ -47,6 +48,7 @@ function App() {
        <BrowserRouter  >
       <Navbar ></Navbar>
       <Routes>
+        <Route path="/" element={<Dogadjaji dogadjaji={dogadjaji}></Dogadjaji>}></Route>
          
         <Route path="/kontakt" element={<Kontakt></Kontakt>}></Route>
         

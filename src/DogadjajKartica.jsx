@@ -6,7 +6,7 @@
          <div className="card">
       
          <div className="card-header" >
-              <img className='card-img-top'  src ={dogadjaj.slika}   /> 
+              <img className='card-img-top'  src ={dogadjaj.image}   /> 
          </div>
          <div className="card-body">
              <div className="tag tag-teal"> {dogadjaj.vreme}    </div>  
