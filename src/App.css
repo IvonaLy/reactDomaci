@@ -21,3 +21,16 @@
   text-decoration: none;
   color: black;
 }
+
+
+/*futer*/
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: #eedb6d;
+  color: black;
+
+}
+a{
+  text-decoration: none;
+}
