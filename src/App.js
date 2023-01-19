@@ -1,8 +1,9 @@
  
 import './App.css';
 import Navbar from './Navbar';
-import { BrowserRouter, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Footer from './Footer';
+import Kontakt from './Kontakt';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Navbar ></Navbar>
       <Routes>
          
+        <Route path="/kontakt" element={<Kontakt></Kontakt>}></Route>
         
       </Routes>
         <Footer></Footer>
