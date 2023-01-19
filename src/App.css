@@ -89,14 +89,14 @@ a{
 }
 body{
     margin: 0;
+    background-color: rgba(0, 0, 0, 0.719);
 }
  
  
 .card {
   margin: 10px;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+  background-color: #eedb6d;
+
   overflow: hidden;
   width: 250px;
   height: 600px;
@@ -113,12 +113,12 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 20px;
+  padding: 10px;
   min-height: 250px;
   
 }
 .naslovKartice{
-  font-size:25px;
+  font-size:20px;
 }
 .opis{
   font-size:25px;
@@ -134,10 +134,10 @@ body{
   border-radius: 50px;
   font-size: 12px;
   margin: 0;
-  color: #fff;
+  color: black;
   padding: 2px 10px;
   text-transform: uppercase;
-  cursor: pointer;
+ 
 }
 .tag-teal {
   background-color: #eedb6d;

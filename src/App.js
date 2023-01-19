@@ -16,7 +16,7 @@ function App() {
       opis:  "Posetite tribinu i konferenciju za štampu pod nazivom Okupacija Srbije ",
       vreme: "13:00",
       mesto: "Pres centar UNS",
-
+      cena_ulaznice: 1000
     },
     {
       id: 2,
@@ -25,6 +25,8 @@ function App() {
       opis:  "Tradicionalna verska manifestacija obeležavanje praznika Krstovdan i Bogojavljenje ",
       vreme: "12:00",
       mesto: "Zemunski kej",
+      cena_ulaznice: 0
+
     },
     {
       id: 3,
@@ -33,6 +35,8 @@ function App() {
       opis:  "Izložba Veličanstvena decenija. Ustav u praksi. Fotografije Benita Romana, 1975 - 1985.",
       vreme: "13:00",
       mesto: "Institut Servantes",
+      cena_ulaznice:300
+
     },
     {
       id: 4,
@@ -41,6 +45,8 @@ function App() {
       opis:  "Bogat programmom za sve generacije ",
       vreme: "10:00",
       mesto: "Park Tasmajdan",
+      cena_ulaznice:400
+
     },
   ])
   return (
